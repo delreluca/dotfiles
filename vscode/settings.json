@@ -1,0 +1,8 @@
+{
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "vim.easymotion": true,
+    "vim.leader": " ",
+}

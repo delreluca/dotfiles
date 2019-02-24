@@ -176,6 +176,9 @@ nnoremap <C-L> :nohl<CR><C-L>
  
 "------------------------------------------------------------
 
-" LDR use shiftwidth for disapproval plugin
-let g:LookOfDisapprovalSpaceThreshold=(&shiftwidth*5)
+" LDR: use shiftwidth for disapproval plugin
+" And only use for certain filetypes
+let g:LookOfDisapprovalSpaceThreshold=0
+let g:LookOfDisapprovalTabThreshold=0
 
+autocmd FileType c,cpp,cs,java,javscript,scala let g:LookOfDisapprovalTabThreshold=5 | let g:LookOfDisapprovalSpaceThreshold=(&shiftwidth*5)

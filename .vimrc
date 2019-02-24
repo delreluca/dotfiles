@@ -145,8 +145,14 @@ set pastetoggle=<F11>
  
 " Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
+"LDR: This is used for the indentation commands < and >
+"     If smarttab is on this will also be used on TAB IF PRESSED IN FRONT OF LINE
 set shiftwidth=2
+"LDR: The tab width that is used in insert mode for backspace and TAB presses
+"     Will keep tabstop unchanged -- note 'x' etc. will work on actual chars
 set softtabstop=2
+"LDR: this means that TAB is always converted into spaces, CTRL-V TAB for real tab
+"     If off, spaces will be only used to fill up after tabs
 set expandtab
  
 " Indentation settings for using hard tabs for indent. Display tabs as
@@ -169,3 +175,7 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
  
 "------------------------------------------------------------
+
+" LDR use shiftwidth for disapproval plugin
+let g:LookOfDisapprovalSpaceThreshold=(&shiftwidth*5)
+

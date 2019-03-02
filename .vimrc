@@ -34,8 +34,8 @@ filetype indent plugin on
 syntax on
 set bg=dark  "LDR dark background
 set t_Co=256 "LDR 256 colors support
+colorscheme desert
 
- 
 "------------------------------------------------------------
 " Must have options {{{1
 "

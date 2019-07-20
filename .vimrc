@@ -35,6 +35,25 @@ syntax on
 set bg=dark  "LDR dark background
 set t_Co=256 "LDR 256 colors support
 colorscheme desert
+let g:lightline = {
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'fugitive#head'
+  \ },
+  \ 'subseparator': {
+  \ }
+  \ }
+
+"LDR: LSP ... for Haskell
+let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper'] }
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+" Or map each action separately
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 "------------------------------------------------------------
 " Must have options {{{1

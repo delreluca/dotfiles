@@ -41,11 +41,15 @@ let g:lightline = {
   \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
   \ },
   \ 'component_function': {
-  \   'gitbranch': 'fugitive#head'
+  \   'gitbranch': 'LightlineBranchOrDetached'
   \ },
   \ 'subseparator': {
   \ }
   \ }
+
+function! LightlineBranchOrDetached()
+  return FugitiveHead(6)
+endfunction
 
 "LDR: LSP ... for Haskell
 let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper'] }

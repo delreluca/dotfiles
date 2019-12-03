@@ -12,5 +12,8 @@
     "telemetry.enableTelemetry": false,
     "vim.disableExtension": false,
     "vim.easymotion": true,
-    "vim.leader": " "
+    "vim.leader": " ",
+    "terminal.integrated.shell.osx": "/opt/local/bin/fish",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "'IBM Plex Mono'"
 }

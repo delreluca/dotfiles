@@ -52,7 +52,7 @@ function! LightlineBranchOrDetached()
 endfunction
 
 "LDR: LSP ... for Haskell
-let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper'] }
+let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper', '--lsp'] }
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 " Or map each action separately
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>

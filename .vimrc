@@ -51,13 +51,30 @@ function! LightlineBranchOrDetached()
   return FugitiveHead(6)
 endfunction
 
-"LDR: LSP ... for Haskell
-let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper', '--lsp'] }
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-" Or map each action separately
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+"LDR: Language Server Protocol, copied from vim-lsp
+
+if executable('hie-wrapper')
+    " Haskell IDE Engine
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'hie',
+        \ 'cmd': {server_info->['hie-wrapper','--lsp']},
+        \ 'whitelist': ['haskell'],
+        \ })
+endif
+
+function! s:on_lsp_buffer_enabled() abort
+    setlocal omnifunc=lsp#complete
+    setlocal signcolumn=yes
+    nmap <buffer> gd <plug>(lsp-definition)
+    nmap <buffer> <f2> <plug>(lsp-rename)
+    " refer to doc to add more commands
+endfunction
+
+augroup lsp_install
+    au!
+    " call s:on_lsp_buffer_enabled only for languages that has the server registered.
+    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
 
 "------------------------------------------------------------
 " Must have options {{{1

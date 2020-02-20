@@ -1,17 +1,17 @@
 [submodule ".vim/bundle/vim-easymotion"]
-	path = .vim/pack/ldr/vim-easymotion
+	path = .vim/pack/ldr/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
 [submodule ".vim/bundle/vim-commentary"]
 	path = .vim/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 [submodule ".vim/bundle/lightline.vim"]
-	path = .vim/pack/ldr/lightline.vim
+	path = .vim/pack/ldr/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
 [submodule ".vim/bundle/delimitMate"]
-	path = .vim/pack/ldr/delimiteMate
+	path = .vim/pack/ldr/start/delimiteMate
 	url = https://github.com/Raimondi/delimitMate.git
 [submodule ".vim/bundle/vim-numbertoggle"]
-	path = .vim/pack/ldr/vim-numbertoggle
+	path = .vim/pack/ldr/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/pack/ldr/start/vim-fugitive

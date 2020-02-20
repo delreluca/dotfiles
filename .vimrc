@@ -8,10 +8,6 @@
 " LDR Set leader to spacebar, very useful for easymotion
 let mapleader = "\<Space>"
 
-" LDR Use the Pathogen plug-in manager
-call pathogen#infect()
-call pathogen#helptags()
-
 " LDR Reset easymotion prefix to single leader
 map <Leader> <Plug>(easymotion-prefix)
 

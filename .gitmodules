@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/pack/ldr/delimiteMate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule ".vim/bundle/vim-disapprove-deep-indentation"]
-	path = .vim/bundle/vim-disapprove-deep-indentation
-	url = https://github.com/dodie/vim-disapprove-deep-indentation
 [submodule ".vim/bundle/vim-numbertoggle"]
 	path = .vim/pack/ldr/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git

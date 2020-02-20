@@ -1,23 +1,23 @@
 [submodule ".vim/bundle/vim-easymotion"]
-	path = .vim/bundle/vim-easymotion
+	path = .vim/pack/ldr/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
 [submodule ".vim/bundle/vim-commentary"]
 	path = .vim/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 [submodule ".vim/bundle/lightline.vim"]
-	path = .vim/bundle/lightline.vim
+	path = .vim/pack/ldr/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
 [submodule ".vim/bundle/delimitMate"]
-	path = .vim/bundle/delimitMate
+	path = .vim/pack/ldr/delimiteMate
 	url = https://github.com/Raimondi/delimitMate.git
 [submodule ".vim/bundle/vim-disapprove-deep-indentation"]
 	path = .vim/bundle/vim-disapprove-deep-indentation
 	url = https://github.com/dodie/vim-disapprove-deep-indentation
 [submodule ".vim/bundle/vim-numbertoggle"]
-	path = .vim/bundle/vim-numbertoggle
+	path = .vim/pack/ldr/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
 [submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle/vim-fugitive
+	path = .vim/pack/ldr/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule ".vim/pack/ldr/start/async.vim"]
 	path = .vim/pack/ldr/start/async.vim

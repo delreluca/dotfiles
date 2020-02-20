@@ -22,3 +22,6 @@
 [submodule ".vim/pack/ldr/start/vim-lsp"]
 	path = .vim/pack/ldr/start/vim-lsp
 	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule ".vim/pack/ldr/start/vim-commentary"]
+	path = .vim/pack/ldr/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git

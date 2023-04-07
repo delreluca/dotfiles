@@ -1,19 +1,17 @@
 {
-    "FSharp.fsacRuntime": "netcore",
-    "FSharp.monoPath": "",
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "editor.fontWeight": "200",
     "editor.lineNumbers": "relative",
     "explorer.confirmDelete": false,
-    "languageServerHaskell.maxNumberOfProblems": 50,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "vim.disableExtension": false,
     "vim.easymotion": true,
     "vim.leader": " ",
-    "terminal.integrated.shell.osx": "/opt/local/bin/fish",
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "'IBM Plex Mono'"
+    "terminal.integrated.fontFamily": "'IBM Plex Mono'",
+    "git.autofetch": true,
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.defaultProfile.osx": "fish"
 }

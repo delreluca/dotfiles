@@ -1,12 +1,13 @@
 # ensure consistent locale
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
-# add Stack directory for local binaries to path
-export PATH=$PATH:$(stack path --local-bin)
+export LC_ALL=en_GB.UTF-8
+export LANG=en_GB.UTF-8
 
 # disable .NET Core telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_ROOT /opt/local/share/dotnet
+
+# Podman / Docker-compose
+export DOCKER_HOST='unix:///tmp/podman.sock'
 
 ##
 # Your previous /Users/lucadelre/.profile file was backed up as /Users/lucadelre/.profile.macports-saved_2019-07-20_at_14:42:02
